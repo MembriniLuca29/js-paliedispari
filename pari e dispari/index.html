@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
-    <title> <!--TITOLOOOOOOOOO---></title>
+    <title> pari e dispari</title>
 </head>
 <body>
-  <header>
 
-  </header>
-  <main>
+<div class="container">
+  <div class="fifty">
+    <label for="selection">pari o dispari</label>
+    <div class="radioinput">
+      <input type="radio" id="pari" name="scelta" value="pari" checked>
+      <label for="pari">pari</label>
+    </div>
 
-  </main>
-  <footer>
-    
-  </footer>
+    <div class="radioinput">
+      <input type="radio" id="dispari" name="scelta" value="dispari">
+      <label for="dispari">dispari</label>
+    </div>
+  </div>
+  <div class="fifty">
+  <label for="player-number">
+    inserisci un numero da 1 a 5
+  </label>
+  
+  <div class="number-input"><input type="number" name="player-number" id="player-number" min="1" max="5"></div></div>
+  <div class="button-div"><form action=""><button type="button" id="start-button"> gioca</button></form></div>
+</div>
+
+<div class="gioco">
+  <div class="computer">
+    <h2 id="computer-number"></h2>
+  </div>
+<div class="risultato"><h1 id="result"></h1></div>
+</div>
   <script src="./js/script.js"></script>
 </body>
 </html>

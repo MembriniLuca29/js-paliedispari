@@ -15,6 +15,7 @@ console.log(dispari, " vediamo")
 
 clickButton.addEventListener("click", 
     function() {
+    
 
     const playerNumber = document.getElementById("player-number").value
     console.log(playerNumber, "giocatore")
@@ -29,7 +30,7 @@ clickButton.addEventListener("click",
         console.log("il totale", totale);
 
 
-
+    if(document.getElementById('pari').checked){
         if (playerNumber > 5 || playerNumber < 1){
             result = "valore inserito non valido";}
         else if (totale % 2 == 0){
@@ -37,8 +38,20 @@ clickButton.addEventListener("click",
         else 
             result = "hai perso";
 
+        }
 
-        document.getElementById("result").innerHTML = result 
+        
+    if(document.getElementById('dispari').checked){
+        if (playerNumber > 5 || playerNumber < 1){
+            result = "valore inserito non valido";}
+        else if (totale % 2 != 0){
+            result = "hai vinto";}
+        else 
+            result = "hai perso";
+
+        }
+    
+        document.getElementById("result").innerHTML = totale + "  " + result 
 
     },
     

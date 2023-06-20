@@ -7,8 +7,95 @@
 }
 
 
+.container{
+    text-align: center;
+   width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/*  general */
-*{
-    font-family: Arial, Helvetica, sans-serif;
+label{
+    font-size: 2rem;
+}
+
+.number-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fifty{
+    width: 50%;
+}
+
+form{
+    margin-top: 10px;
+}
+
+.button-div{
+    width: 100%;
+    margin-top: 30px;
+}
+h1{
+
+    font-size: 40px;
+}
+
+
+#result{
+    text-align: center
+}
+
+.radioinput{
+    padding-top: 20px;
+    display: flex;
+    padding-left: 30%;
+}
+label{
+    display: block;
+}
+
+input{
+width: 70px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+button{
+    font-size: 2rem;
+}
+
+.gioco{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.computer{
+    width:10% ;
+    height: calc(100vw - 90vw);
+    background-color: lightcoral;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.risultato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: calc(100vw - 90vw);
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    min-width: 200px;
+}
+h1{
+    font-size: 3rem;
 }
