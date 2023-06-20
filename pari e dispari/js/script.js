@@ -1,34 +1,19 @@
-
-
 const clickButton  = document.getElementById("start-button");
-
-
 
 const pari = document.getElementById("pari").value;
 
-console.log(pari, " vediamo")
-
 const dispari = document.getElementById("dispari").value;
-
-console.log(dispari, " vediamo")
-
 
 clickButton.addEventListener("click", 
     function() {
     
+    const playerNumber = document.getElementById("player-number").value;
 
-    const playerNumber = document.getElementById("player-number").value
-    console.log(playerNumber, "giocatore")
-
-    const computerNumber = Math.random() * (5) + 1  
-    console.log(computerNumber)
+    const computerNumber = Math.random() * (5) + 1  ;
 
     document.getElementById("computer-number").innerHTML =  parseInt(computerNumber);
 
-
     const totale =  parseInt(playerNumber) + parseInt(computerNumber);
-        console.log("il totale", totale);
-
 
     if(document.getElementById('pari').checked){
         if (playerNumber > 5 || playerNumber < 1){
@@ -37,10 +22,8 @@ clickButton.addEventListener("click",
             result = "hai vinto";}
         else 
             result = "hai perso";
-
         }
 
-        
     if(document.getElementById('dispari').checked){
         if (playerNumber > 5 || playerNumber < 1){
             result = "valore inserito non valido";}
@@ -48,13 +31,9 @@ clickButton.addEventListener("click",
             result = "hai vinto";}
         else 
             result = "hai perso";
-
         }
     
-        document.getElementById("result").innerHTML = totale + "  " + result 
-
+        document.getElementById("result").innerHTML =  result 
+        document.getElementById("somma").innerHTML =  totale 
     },
-    
-    
-    
     )
