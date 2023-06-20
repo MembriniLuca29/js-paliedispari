@@ -1,0 +1,47 @@
+
+
+const clickButton  = document.getElementById("start-button");
+
+
+
+const pari = document.getElementById("pari").value;
+
+console.log(pari, " vediamo")
+
+const dispari = document.getElementById("dispari").value;
+
+console.log(dispari, " vediamo")
+
+
+clickButton.addEventListener("click", 
+    function() {
+
+    const playerNumber = document.getElementById("player-number").value
+    console.log(playerNumber, "giocatore")
+
+    const computerNumber = Math.random() * (5) + 1  
+    console.log(computerNumber)
+
+    document.getElementById("computer-number").innerHTML =  parseInt(computerNumber);
+
+
+    const totale =  parseInt(playerNumber) + parseInt(computerNumber);
+        console.log("il totale", totale);
+
+
+
+        if (playerNumber > 5 || playerNumber < 1){
+            result = "valore inserito non valido";}
+        else if (totale % 2 == 0){
+            result = "hai vinto";}
+        else 
+            result = "hai perso";
+
+
+        document.getElementById("result").innerHTML = result 
+
+    },
+    
+    
+    
+    )
